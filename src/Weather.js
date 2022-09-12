@@ -58,9 +58,7 @@ export default function Weather(){
             <li>Humidity:{weatherData.humidity}%</li>
             <li>Wind {weatherData.wind} mph</li>
           </ul>
-          <p>
-            <a href="https://github.com/amandareyd/weather-app-project.git">Open-sourced code </a>, by Amanda Drause
-          </p>
+          
         </div>
       </div>
       <div></div>
