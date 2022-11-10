@@ -32,10 +32,11 @@ margin-top: 20px;
     margin-right: 10px;
     display: inline-block;
     width: 64px;
+    margin-bottom: 28px;
 }
 .Weather .temperature{
     color:rgb(33, 33, 33);
-    font-size: 64px;
+    font-size: 54px;
     line-height: 64px;
     font-weight: 400px;
     margin-left: 10px;
