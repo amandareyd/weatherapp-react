@@ -18,7 +18,7 @@ function fahrenehit(){
 }
 
 
-   if (unit === `celsius`){
+   if (unit === "celsius"){
     return(
         <div className="WeatherTemperature">
         <span className="temperature">{Math.round(props.celsius)}</span> 
@@ -33,7 +33,7 @@ function fahrenehit(){
    
     return(
     <div className="WeatherTemperature">
-    <span className="temperature">{Math.round(fahrenehit)}</span> 
+    <span className="temperature">{Math.round(fahrenehit())}</span> 
     <span className="unit">
     <a href="/" onClick={showCelsius}>
         °C 
