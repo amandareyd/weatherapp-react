@@ -1,5 +1,6 @@
 import React, {useState}from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
 
@@ -18,7 +19,7 @@ export default function Weather(props){
       wind: response.data.wind.speed,
       date:new Date(response.data.time*1000),
       city: response.data.city,
-      iconUrl: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+      icon: response.data.condition.icon,
     });
     
   
@@ -61,7 +62,7 @@ setCity(event.target.value);
       </div>
     </form>
     <WeatherInfo data={weatherData}/>
-   
+   <WeatherForecast/>
   </div>
   );
 } else{
